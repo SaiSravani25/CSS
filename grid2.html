@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+             gap: 10px;
+            height: 80vh;
+            border: 5px solid palevioletred;
+           /* place-items: center; */
+            grid-template-areas: 
+            'header header header header'
+             'main main  empty sidebar'                      
+             'footer footer  footer footer';
+            
+           
+            
+        }
+        .header{
+            background-color: orange;
+          grid-area: header;
+          
+        }
+        .main{
+            background-color: aqua;
+            grid-area: main;
+            
+
+        }
+        .empty{
+            background-color: rgb(217, 101, 101);
+            grid-area: empty;
+
+        }
+        .sidebar{
+            background-color: rosybrown;
+            grid-area: sidebar;
+
+        }
+        .footer{
+            background-color: green;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="header">header</div>
+    <div class="main">Main</div>
+    <div class="empty">Empty</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="footer">Footer</div>
+   
+</div>
+</body>
+</html>
